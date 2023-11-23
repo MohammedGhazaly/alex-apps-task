@@ -1,3 +1,4 @@
+import 'package:alex_apps_taks/views/login/widgets/login_view_body.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -6,6 +7,8 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: LoginViewBody(),
+    );
   }
 }
