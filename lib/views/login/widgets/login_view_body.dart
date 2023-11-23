@@ -65,6 +65,26 @@ class LoginViewBody extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 20.h,
+                    ),
+                    CustomAuthFormField(
+                      prefixIcon: Icon(
+                        Icons.lock_outline_rounded,
+                        size: 30.sp,
+                        color: Color.fromARGB(255, 118, 118, 118),
+                      ),
+                      suffixIcon: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.visibility_off_rounded,
+                          size: 30.sp,
+                          color: Color.fromARGB(255, 118, 118, 118),
+                        ),
+                      ),
+                      hintText: "ادخل رقم الجول",
+                      textInputType: TextInputType.number,
+                    ),
                   ],
                 ),
               )
