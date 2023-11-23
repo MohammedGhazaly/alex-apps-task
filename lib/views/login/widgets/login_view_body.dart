@@ -1,5 +1,6 @@
 import 'package:alex_apps_taks/utils/assets.dart';
 import 'package:alex_apps_taks/utils/colors.dart';
+import 'package:alex_apps_taks/views/login/widgets/custom_auth_button.dart';
 import 'package:alex_apps_taks/views/login/widgets/custom_auth_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -95,7 +96,42 @@ class LoginViewBody extends StatelessWidget {
                       style: TextStyle(
                         color: AppColors.darkColor1,
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      height: 18.h,
+                    ),
+                    SizedBox(
+                      height: 50.h,
+                      child: CustomAuthButton(
+                          text: "تسجيل الدخول", onPressed: () {}),
+                    ),
+                    SizedBox(
+                      height: 160.h,
+                    ),
+                    Text.rich(
+                      textAlign: TextAlign.center,
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "ليس لديك حساب؟",
+                            style: TextStyle(
+                              fontSize: 18.sp,
+                              color: AppColors.greyColor2,
+                            ),
+                          ),
+                          TextSpan(
+                              text: " سجل الان",
+                              style: TextStyle(
+                                color: AppColors.primaryColor,
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.bold,
+                              ))
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 60.h,
+                    ),
                   ],
                 ),
               )
