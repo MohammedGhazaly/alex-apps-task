@@ -39,6 +39,7 @@ class LoginViewBody extends StatelessWidget {
               ),
               Form(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Row(
                       children: [
@@ -83,8 +84,18 @@ class LoginViewBody extends StatelessWidget {
                         ),
                       ),
                       hintText: "ادخل رقم الجول",
-                      textInputType: TextInputType.number,
+                      textInputType: TextInputType.text,
                     ),
+                    SizedBox(
+                      height: 17.h,
+                    ),
+                    Text(
+                      "هل نسيت كلمة المرور؟",
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        color: AppColors.darkColor1,
+                      ),
+                    )
                   ],
                 ),
               )
