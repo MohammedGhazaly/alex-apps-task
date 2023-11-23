@@ -1,5 +1,6 @@
 import 'package:alex_apps_taks/utils/assets.dart';
 import 'package:alex_apps_taks/utils/colors.dart';
+import 'package:alex_apps_taks/views/login/widgets/country_code_field.dart';
 import 'package:alex_apps_taks/views/login/widgets/custom_auth_button.dart';
 import 'package:alex_apps_taks/views/login/widgets/custom_auth_form_field.dart';
 import 'package:flutter/material.dart';
@@ -54,16 +55,7 @@ class LoginViewBody extends StatelessWidget {
                         SizedBox(width: 16.w),
                         Expanded(
                           flex: 1,
-                          child: Container(
-                            height: 55.h,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12.r),
-                              border: Border.all(
-                                width: 1,
-                                color: AppColors.greyColor1,
-                              ),
-                            ),
-                          ),
+                          child: CountryCodeField(),
                         ),
                       ],
                     ),
