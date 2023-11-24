@@ -2,6 +2,8 @@ import 'package:alex_apps_taks/utils/assets.dart';
 import 'package:alex_apps_taks/utils/colors.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/customer_details_tile.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/horizontal_divider_line.dart';
+import 'package:alex_apps_taks/views/order_details/widgets/order_details_bottom_button.dart';
+import 'package:alex_apps_taks/views/order_details/widgets/order_details_bottom_section.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/order_details_image_slider.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/order_details_section.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/order_loading_details.dart';
@@ -64,12 +66,10 @@ class OrderDetailsBody extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            decoration: BoxDecoration(),
-          ),
           SizedBox(
-            height: 50.h,
+            height: 10.h,
           ),
+          OrderDetailsBottomSection(),
         ],
       ),
     );
