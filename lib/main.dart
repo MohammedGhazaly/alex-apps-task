@@ -1,3 +1,4 @@
+import 'package:alex_apps_taks/views/custom_bottom_nav_bar/custom_bottom_nav_bar.dart';
 import 'package:alex_apps_taks/views/login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         initialRoute: LoginView.routeName,
         routes: {
           LoginView.routeName: (context) => const LoginView(),
+          CustomBottomNavBar.routeName: (context) => const CustomBottomNavBar(),
         },
       ),
     );

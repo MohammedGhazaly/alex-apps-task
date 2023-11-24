@@ -1,5 +1,6 @@
 import 'package:alex_apps_taks/utils/assets.dart';
 import 'package:alex_apps_taks/utils/colors.dart';
+import 'package:alex_apps_taks/views/custom_bottom_nav_bar/custom_bottom_nav_bar.dart';
 import 'package:alex_apps_taks/views/login/widgets/country_code_field.dart';
 import 'package:alex_apps_taks/views/login/widgets/custom_auth_button.dart';
 import 'package:alex_apps_taks/views/login/widgets/custom_auth_form_field.dart';
@@ -95,7 +96,11 @@ class LoginViewBody extends StatelessWidget {
                     SizedBox(
                       height: 50.h,
                       child: CustomAuthButton(
-                          text: "تسجيل الدخول", onPressed: () {}),
+                          text: "تسجيل الدخول",
+                          onPressed: () {
+                            Navigator.pushNamed(
+                                context, CustomBottomNavBar.routeName);
+                          }),
                     ),
                     SizedBox(
                       height: 160.h,
@@ -112,12 +117,13 @@ class LoginViewBody extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                              text: " سجل الان",
-                              style: TextStyle(
-                                color: AppColors.primaryColor,
-                                fontSize: 18.sp,
-                                fontWeight: FontWeight.bold,
-                              ))
+                            text: " سجل الان",
+                            style: TextStyle(
+                              color: AppColors.primaryColor,
+                              fontSize: 18.sp,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     ),
