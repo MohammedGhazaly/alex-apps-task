@@ -1,3 +1,5 @@
+import 'package:alex_apps_taks/utils/assets.dart';
+import 'package:alex_apps_taks/views/order_details/widgets/customer_details_tile.dart';
 import 'package:alex_apps_taks/views/order_details/widgets/order_details_image_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -7,16 +9,22 @@ class OrderDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 35.h,
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 25.w),
-          child: OrderDetailsImageSlider(),
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: 35.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: OrderDetailsImageSlider(),
+          ),
+          SizedBox(
+            height: 24.h,
+          ),
+          CustomerDetailsTile()
+        ],
+      ),
     );
   }
 }
