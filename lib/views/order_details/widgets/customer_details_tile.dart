@@ -23,11 +23,19 @@ class CustomerDetailsTile extends StatelessWidget {
             )
           ]),
       child: ListTile(
-        title: Text("أبو فهد عبد العزيز"),
+        title: Text(
+          "أبو فهد عبد العزيز",
+          style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold),
+        ),
         leading: CircleAvatar(
           backgroundImage: AssetImage(AppAssets.person),
         ),
-        subtitle: Text("السعودية"),
+        subtitle: Text(
+          "السعودية",
+          style: TextStyle(
+            fontSize: 14.sp,
+          ),
+        ),
       ),
     );
   }
