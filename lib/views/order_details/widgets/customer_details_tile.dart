@@ -11,7 +11,6 @@ class CustomerDetailsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(6.h),
-      margin: EdgeInsets.symmetric(horizontal: 25.w),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.r),
           color: Colors.white,

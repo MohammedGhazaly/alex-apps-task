@@ -9,7 +9,6 @@ class HorizontalDividerLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 25.w),
       height: 1,
       width: double.infinity,
       color: Colors.grey.withOpacity(0.35),
