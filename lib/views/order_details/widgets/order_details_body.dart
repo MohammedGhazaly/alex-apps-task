@@ -64,6 +64,73 @@ class OrderDetailsBody extends StatelessWidget {
           SizedBox(
             height: 15.h,
           ),
+          HorizontalDividerLine(),
+          SizedBox(
+            height: 15.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: OrderLoadingDetails(
+              detail: "60 صندوق",
+              iconText: " عدد الحاويات",
+              icon: Icons.inventory,
+            ),
+          ),
+          SizedBox(
+            height: 15.h,
+          ),
+          HorizontalDividerLine(),
+          SizedBox(
+            height: 15.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: OrderLoadingDetails(
+              detail: "40 شاحنة",
+              iconText: "عدد المركبات",
+              icon: Icons.local_shipping_rounded,
+            ),
+          ),
+          SizedBox(
+            height: 15.h,
+          ),
+          HorizontalDividerLine(),
+          SizedBox(
+            height: 15.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: OrderLoadingDetails(
+              detail: "دينا - دينا بطحاء",
+              iconText: "نوع المركبات",
+              icon: Icons.local_shipping_rounded,
+            ),
+          ),
+          SizedBox(
+            height: 15.h,
+          ),
+          HorizontalDividerLine(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: Text(
+              "اريد توصيل شحنة خشب الي ميناء جدة وزن الشحنة 100 طن",
+              style: TextStyle(
+                color: AppColors.blueishColor,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 35.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.w),
+            child: Image.asset(
+              AppAssets.map,
+            ),
+          ),
+          SizedBox(
+            height: 50.h,
+          ),
         ],
       ),
     );

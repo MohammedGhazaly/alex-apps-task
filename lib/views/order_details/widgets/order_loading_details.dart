@@ -19,12 +19,12 @@ class OrderLoadingDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
-          child: Text("100 طن",
+          child: Text(detail,
               style: TextStyle(fontSize: 14.sp, color: AppColors.blueishColor)),
         ),
         Spacer(),
         Text(
-          "وزن الشحنه",
+          iconText,
           style: TextStyle(
             fontSize: 14.sp,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class OrderLoadingDetails extends StatelessWidget {
           width: 10.w,
         ),
         Icon(
-          Icons.inventory,
+          icon,
         ),
       ],
     );
