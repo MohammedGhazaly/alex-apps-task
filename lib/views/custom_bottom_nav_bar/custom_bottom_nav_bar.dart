@@ -1,4 +1,4 @@
-import 'package:alex_apps_taks/views/data/custom_bar_data.dart';
+import 'package:alex_apps_taks/views/custom_bottom_nav_bar/data/custom_bar_data.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 
@@ -25,6 +25,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
     return Scaffold(
         body: PersistentTabView(
       context,
+
       controller: _controller,
       screens: buildScreens,
       items: navBarsItems,
@@ -37,9 +38,12 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
       hideNavigationBarWhenKeyboardShows:
           true, // Recommended to set 'resizeToAvoidBottomInset' as true while using this argument. Default is true.
       decoration: NavBarDecoration(
+        border: Border(
+          top: BorderSide(color: Colors.grey[300]!, width: 1),
+        ),
         // gradient: LinearGradient(colors: []),
-        borderRadius: BorderRadius.circular(10.0),
-        colorBehindNavBar: Colors.white,
+        // borderRadius: BorderRadius.circular(10.0),
+        // colorBehindNavBar: Colors.white,
       ),
 
       popAllScreensOnTapOfSelectedTab: true,
@@ -56,7 +60,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
         duration: Duration(milliseconds: 200),
       ),
       navBarStyle:
-          NavBarStyle.style1, // Choose the nav bar style with this property.
+          NavBarStyle.style13, // Choose the nav bar style with this property.
     ));
   }
 }

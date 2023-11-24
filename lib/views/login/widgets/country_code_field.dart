@@ -14,7 +14,8 @@ class CountryCodeField extends StatefulWidget {
 
 class _CountryCodeFieldState extends State<CountryCodeField> {
   final countryPicker = const FlCountryCodePicker();
-  CountryCode? countryCode;
+  CountryCode countryCode =
+      CountryCode(name: "Saudi Arabia", code: "SA", dialCode: "+996");
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -28,6 +29,12 @@ class _CountryCodeFieldState extends State<CountryCodeField> {
         setState(() {
           countryCode = code ?? countryCode;
         });
+        print(countryCode.code);
+        print(countryCode.name);
+        print(countryCode.dialCode);
+        print(countryCode.flagImagePackage);
+        print(countryCode.flagUri);
+        print(countryCode.flagImage());
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 4.w),
