@@ -29,12 +29,6 @@ class _CountryCodeFieldState extends State<CountryCodeField> {
         setState(() {
           countryCode = code ?? countryCode;
         });
-        print(countryCode.code);
-        print(countryCode.name);
-        print(countryCode.dialCode);
-        print(countryCode.flagImagePackage);
-        print(countryCode.flagUri);
-        print(countryCode.flagImage());
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 4.w),
@@ -49,8 +43,8 @@ class _CountryCodeFieldState extends State<CountryCodeField> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            if (countryCode != null) Text(countryCode!.dialCode),
-            if (countryCode != null) countryCode!.flagImage(),
+            Text(countryCode.dialCode),
+            countryCode.flagImage(),
           ],
         ),
       ),

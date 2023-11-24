@@ -99,7 +99,9 @@ class LoginViewBody extends StatelessWidget {
                           text: "تسجيل الدخول",
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, CustomBottomNavBar.routeName);
+                              context,
+                              CustomBottomNavBar.routeName,
+                            );
                           }),
                     ),
                     SizedBox(

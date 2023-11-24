@@ -1,6 +1,8 @@
+import 'package:alex_apps_taks/utils/assets.dart';
 import 'package:alex_apps_taks/utils/colors.dart';
 import 'package:alex_apps_taks/views/home/widgets/orders_list_view_item_bottom.dart';
 import 'package:alex_apps_taks/views/home/widgets/orders_list_view_item_name_and_destination.dart';
+import 'package:alex_apps_taks/views/order_details/order_details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -55,7 +57,7 @@ class PackageListViewItem extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(8.r),
                 child: Image.asset(
-                  "assets/images/package.png",
+                  AppAssets.pakcage,
                   width: 60.h,
                   height: 50.h,
                   fit: BoxFit.cover,
@@ -87,7 +89,7 @@ class PackageListViewItem extends StatelessWidget {
           SizedBox(
             height: 8.h,
           ),
-          OrdersListViewItemBottom()
+          OrdersListViewItemBottomSection()
         ],
       ),
     );
